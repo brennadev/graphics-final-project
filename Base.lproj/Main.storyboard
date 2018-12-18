@@ -65,7 +65,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorRoundedCorners">
-                                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -81,7 +81,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorRoundedCorners">
-                                                        <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -166,7 +166,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorRoundedCorners">
-                                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -182,7 +182,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorRoundedCorners">
-                                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -198,7 +198,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorRoundedCorners">
-                                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -265,12 +265,42 @@
                                     <outletCollection property="gestureRecognizers" destination="GAu-vF-MYP" appends="YES" id="zhg-Lu-lsC"/>
                                 </connections>
                             </mtkView>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2At-oA-BEP" customClass="ValueDescriptionSlider" customModule="ColorBlending" customModuleProvider="target">
+                                <rect key="frame" x="11" y="912" width="240" height="73"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Xaw-Ea-gQb"/>
+                                    <constraint firstAttribute="height" constant="73" id="m8G-FE-XQj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fixedValueLabelWidth">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="displayAsRounded" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldDisplayNoneIfZero" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptionText" value="Brightness Percentage"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="brightnessPercentageSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="UUL-uj-hwH"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XF1-NV-bGQ" firstAttribute="top" secondItem="6ev-Mq-Oli" secondAttribute="bottom" constant="8" id="Ajw-l6-Pf5"/>
                             <constraint firstItem="6ev-Mq-Oli" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B5d-Yq-8wn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XF1-NV-bGQ" secondAttribute="trailing" constant="8" id="BNR-r0-Xb8"/>
+                            <constraint firstItem="2At-oA-BEP" firstAttribute="top" secondItem="6ev-Mq-Oli" secondAttribute="bottom" constant="8" id="Kmn-uC-LJ5"/>
+                            <constraint firstItem="2At-oA-BEP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="Wu6-B0-AmM"/>
                             <constraint firstItem="6ev-Mq-Oli" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b7F-Nc-grd"/>
                             <constraint firstItem="6ev-Mq-Oli" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d4R-Wc-hzv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XF1-NV-bGQ" secondAttribute="bottom" constant="8" id="u05-qQ-oxI"/>
@@ -279,7 +309,6 @@
                     </view>
                     <connections>
                         <outlet property="mtkView" destination="6ev-Mq-Oli" id="r9n-Mm-qRk"/>
-                        <outlet property="redButton" destination="gZr-kz-gDj" id="5gd-md-hQF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

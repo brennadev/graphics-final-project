@@ -13,6 +13,8 @@ import UIKit
 
 // convenience interface when using float4 for color values
 extension float4 {
+    
+    // note to self: these are potentially going to be in sRGB, so be careful with them if I use them
     static let white = float4(1, 1, 1, 1)
     static let black = float4(0, 0, 0, 1)
     static let blue = float4(0, 0, 1, 1)
@@ -78,6 +80,8 @@ extension UIColor {
     /// Convenience for use with Metal - use a simd float4 to get a UIColor instance in display P3 space
     /// - parameter float4: simd float4 representation of a color. The format is assumed to be RGBA.
     convenience init(from float4: float4) {
+        
+        // I'll probably need to switch this to the extended sRGB UIColor init (the init(red one)
         self.init(displayP3Red: CGFloat(float4.red), green: CGFloat(float4.green), blue: CGFloat(float4.blue), alpha: CGFloat(float4.alpha))
     }
 }
