@@ -7,7 +7,7 @@
 //
 //  This is the "core" of the CPU-side of things and where the pipeline setup code goes
 
-// A small amount of code (where noted) came from a raywenderlich.com tutorial (I downloaded the code a while back) - as some stuff from the website has changed, I'm not sure if this is even from a current version of an article, but this is so you at least know what website I got the code from
+// A small amount of code (where noted) came from a raywenderlich.com tutorial (I downloaded the code a while back) - as some stuff from the website has changed, I'm not sure if this is even from a current version of an article, but this is so you at least know what website I got the code from and provided the licensing info
 /**
  * Copyright (c) 2016 Razeware LLC
  *
